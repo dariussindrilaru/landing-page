@@ -8,19 +8,27 @@
 
 /* HEADER */
 .header {
+  display: flex;
+  justify-content: center;
   background-color: #1f2937;
-  padding: 20px 0;
+}
+
+.header-container {
+  width: 70%;
 }
 
 .navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 100px;
 }
 
-.container {
-  width: 70%;
-  margin: auto;
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
 }
 
 .button {
@@ -33,13 +41,6 @@
   border-radius: 10px;
   padding: 8px 30px;
   margin-top: 15px;
-}
-
-.main-content {
-  margin: 100px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .navigation .logo {
@@ -61,7 +62,7 @@
 }
 
 .main-content .left {
-  width: 500px;
+  max-width: 500px;
 }
 
 .main-content .left h1 {
@@ -75,14 +76,21 @@
   color: #E5E7EB;
 }
 
+.main-content .right {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .main-content .right .image {
-  background-color: #ffffff55;
-  color: white;
-  height: 250px;
-  width: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #ffffff55;
+  color: white;
+  height: 250px;
+  max-width: 500px;
+  flex-grow: 1;
 }
 
 /* END HEADER */
@@ -111,13 +119,12 @@
   margin-bottom: 30px;
 }
 
-.items-container {
+.content-container {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 50px;
   flex-wrap: wrap;
-
 }
 
 .item {
@@ -130,6 +137,7 @@
 
 .item p {
   margin-top: 20px;
+  color: rgba(31, 41, 55, 0.8);
 }
 
 /* END CONTENT */
@@ -140,6 +148,7 @@
   display: flex;
   justify-content: center;
   padding: 100px;
+  margin-bottom: 70px;
 }
 
 .quote .text {
@@ -163,3 +172,57 @@
 }
 
 /* END QUOTE */
+
+/* ACTION */
+.action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.action-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #3882F6;
+  color: white;
+  width: 70%;
+  padding: 50px 0;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.action-container .left p {
+  color: #E5E7EB;
+}
+
+.action strong {
+  font-size: 24px;
+}
+
+.button-action {
+  background-color: #3882F6;
+  color: white;
+  border-radius: 7px;
+  border: 2px solid white;
+  padding: 6px 33px;
+  font-size: 16px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+/* END ACTION */
+
+/* FOOTER */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1F2937;
+  color: #F9FAF8;
+  padding: 40px 0;
+  font-size: 18px;
+}
+
+/* END FOOTER */
